@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:linear-gradient( black, rgb(0, 17, 90));
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logo a img{
+    transform: scale(0.5);
+    background-color: white;
+    border-radius: 40px;
+}
+
+.logo a img:hover{
+    background-color: greenyellow;
+    box-shadow: 0px 0px 10px green;
+}
+
+header{
+    padding: 40px 4%;
+}
+
+header .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: greenyellow;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.button-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: greenyellow;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.button-contato button:hover{
+    box-shadow: 0px 0px 8px green;
+}
