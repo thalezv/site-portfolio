@@ -6,7 +6,7 @@
 }
 
 body{
-    background:linear-gradient( black, rgb(0, 17, 90));
+    background:linear-gradient( black, rgb(0, 17, 90), black);
     height: 100vh;
 }
 
@@ -16,9 +16,8 @@ body{
 }
 
 .logo a img{
-    transform: scale(0.5);
     background-color: white;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 .logo a img:hover{
@@ -65,8 +64,98 @@ header nav ul li{
     border: 0;
     border-radius: 30px;
     cursor: pointer;
+    transition: .2s;
 }
 
 .button-contato button:hover{
     box-shadow: 0px 0px 8px green;
+    transform: scale(1.05);
+}
+
+.topo{
+    padding: 40px 4%;
+}
+
+.flex{
+    display: flex;
+}
+
+.topo .flex{
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.topo h1{
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.topo h1 span{
+    color: greenyellow;
+}
+
+.topo p{
+    color: white;
+    margin: 40px 0;
+}
+
+.topo .imagem img{
+    position: relative; /* posição capaz de variar*/
+    animation: Flutuar 2s ease-in-out infinite alternate;/*chama a animação de mesmo nome, quanto tempo a animação deve durar,
+    ease-in-out, significa inicio e fim lento, infinite o torna infinita e alternative, do 0 vai a 100 e do 100 vai ao zero animando*/
+}
+
+/*animação para flutuar, no estado zero ele leva que a imagem deve ficar no extremo top de seu pai
+em 100% ele deve estar a 30px de distancia do topo*/
+@keyframes Flutuar{
+    0%{
+        top:0; /*posição fixa absoluta, em relação ao top do elemento pai*/
+    }
+    100%{
+        top:30px;
+    }
+}
+
+.especialidades{
+    padding: 40px 4%;
+}
+
+h2{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+h2 span{
+    color: greenyellow;
+}
+
+.especialidades-box{
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 60px;
+    width: 275px;
+    transition: .2s;
+}
+
+.especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(172, 255, 47, 0.521);
+}
+
+.especialidades-box i{
+    font-size: 70px;
+    color: greenyellow;
+}
+
+.especialidades-box h3{
+    font-size: 28px;
+    margin: 15px;
+}
+
+.interface .flex{
+    gap: 60px;
 }
