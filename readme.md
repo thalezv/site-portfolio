@@ -1,0 +1,1 @@
+Site Portfolio pessoal para trabalho, com sessão sobre, exemplos de outros trabalhos e formulario para contato, o mesmo pode ser usado de exemplo para trabalhos posteriores, possui sitema de navegação de rolagem em pagina unica, e sitema de navegação lateral no topo do site, estilo mobile

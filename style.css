@@ -57,7 +57,7 @@ header .menu-computadores ul li{
 }
 
 .button-open{
-    display: none;
+    display: none; /*esconde*/
 }
 
 .button-open i{
@@ -87,7 +87,7 @@ header .menu-computadores ul li{
     font-weight: 300;
     padding: 20px 8%;
     text-decoration: none;
-    display: block;
+    display: block; /*aparecer novamente*/
 }
 
 .menu-mobile nav ul li a:hover{
@@ -104,6 +104,7 @@ header .menu-computadores ul li{
     font-size: 30px;
 }
 
+/*não existe no html, o javascript a cria*/
 .menu-mobile.abrir{
     width: 70%;
 }
@@ -492,6 +493,6 @@ footer{
     }
 
     .button-open{
-        display: block;
+        display: block; 
     }
 }
