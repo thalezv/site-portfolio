@@ -35,14 +35,14 @@ header .interface{
     justify-content: space-between;
 }
 
-header a{
+header .menu-computadores a{
     color: white;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
-header a:hover{
+header .menu-computadores a:hover{
     color: greenyellow;
     transform: scale(1.05);
 }
@@ -51,9 +51,61 @@ header nav ul{
     list-style-type: none;
 }
 
-header nav ul li{
+header .menu-computadores ul li{
     display: inline-block;
     padding: 0 40px;
+}
+
+.button-open{
+    display: none;
+}
+
+.button-open i{
+    color: greenyellow;
+    font-size: 40px;
+}
+
+.menu-mobile{
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: greenyellow;
+    color: black;
+}
+
+.menu-mobile .button-close{
+    padding: 20px 5%;
+}
+
+.menu-mobile .button-close i{
+    color: greenyellow;
+    font-size: 30px;
+}
+
+.menu-mobile.abrir{
+    width: 70%;
 }
 
 .button-contato button{
@@ -249,4 +301,197 @@ h2 span{
 
 .imagem-portfolio .nome:hover{
     opacity: 1;
+}
+
+.formulario{
+    padding: 120px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgb(66, 66, 66);
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: rgba(172, 255, 47, 0.438);
+}
+
+form textarea{
+    resize: none;
+    height: 120px;
+}
+
+form .button-enviar{
+    margin-top: 15px;
+    text-align: center;
+}
+
+form .button-enviar input[type=submit]{
+    width: 120px;
+    height: 60px;
+    background-color: greenyellow;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s;
+}
+
+form .button-enviar input[type=submit]:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(172, 255, 47, 0.521);
+}
+
+footer{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff15
+}
+
+.line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.line .imagem{
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.line .imagem:hover{
+    background-color: greenyellow;
+    box-shadow: 0px 0px 10px green;
+    transform: scale(1.05);
+}
+
+.line .texto{
+    display: flex;
+    align-items: center;
+}
+
+.line .texto p{
+    color:white
+}
+
+.line a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.line a p{
+    color: greenyellow;
+}
+
+.line a p i{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1173px){
+    .menu-computadores, .button-contato{
+        display: none;
+    }
+
+    .topo .flex{
+        flex-direction: column-reverse;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo h1{
+        font-size: 30px;
+    }
+
+    .topo{
+        padding: 40px 8%;
+    }
+
+    .topo .imagem img{
+        width: 100%;
+    }
+
+    .especialidades{
+        padding: 40px 8%;
+    }
+
+    h2{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .especialidades-box{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sobre{
+        padding: 40px 8%;
+    }
+
+    .sobre .imagem img{
+        width: 100%;
+    }
+
+    .social{
+        text-align: center;
+    }
+
+    .portfolio{
+        padding: 40px 8%;
+    }
+
+    .imagem-portfolio{
+        max-width: 360px;
+        width: 100%;
+        margin: 60px 0 auto auto;
+    }
+
+    .formulario{
+        padding: 40px 8%;
+    }
+
+    footer{
+        padding: 40px 8%;
+    }
+
+    footer .line{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .line .imagem{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .line .texto p{
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+    .line a p{
+        font-size: 15px;
+    }
+
+    .button-open{
+        display: block;
+    }
 }
