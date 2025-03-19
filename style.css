@@ -290,6 +290,7 @@ h2 span{
     height: 100%;
     border-radius: 30px;
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 24px;
@@ -404,6 +405,99 @@ footer{
     font-size: 20px;
 }
 
+/*agradecimento*/
+
+.enquadro{
+    padding: 120 8%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.enquadro .flex{
+    background-color: beige;
+    width: 500px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border: thick double greenyellow;
+    border-radius: 20px;
+    box-shadow: 0 15px 15px green;
+}
+
+.texto-agradecimento h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.texto-agradecimento .mensagem{
+    background-color: black;
+    border-radius: 40px;
+    color: white;
+    text-align: center;
+    padding: 40px 40px;
+}
+
+.texto-agradecimento h1 span{
+    font-size: 45px;
+    color: green;
+}
+
+.mensagem p{
+    font-size: 20px;
+}
+
+.button-agradecimento{
+    display: flex;
+    justify-content: center;
+}
+
+.button-agradecimento a button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: greenyellow;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.button-agradecimento a button:hover{
+    box-shadow: 0px 0px 8px green;
+    transform: scale(1.05);
+}
+
+.enquadro .imagens-agradecimento{
+    display: flex;
+    gap: 80px;
+}
+
+.imagens-agradecimento img{
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.imagens-agradecimento img:hover{
+    background-color: greenyellow;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px green;
+}
+
+#certo.hidden{
+    display: none;
+}
+
+#errado.hidden{
+    display: none;
+}
+
 @media screen and (max-width: 1173px){
     .menu-computadores, .button-contato{
         display: none;
@@ -495,4 +589,27 @@ footer{
     .button-open{
         display: block; 
     }
+
+    /*agradecimento*/
+
+    .enquadro .flex{
+        width: 300px;
+    }
+
+    .texto-agradecimento h1{
+        font-size: 30px;
+    }
+
+    .texto-agradecimento h1 span{
+        font-size: 35px;
+    }
+
+    .mensagem p{
+        font-size: 15px;
+    }
+
+    .button-agradecimento a button{
+        font-size: 15px;
+    }
+
 }
